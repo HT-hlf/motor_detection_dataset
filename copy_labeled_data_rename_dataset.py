@@ -42,11 +42,11 @@ def copy_dataset(raw_root_path_element,dist_root_path,image_list):
             if element_xml in annotation_path_list:
                 shutil.copy(element_path, dist_element_image_path)
                 shutil.copy(element_annotation_path, dist_element_annotation_path)
+                count = count + 1
         else:
 
             image_list1 = os.listdir(element_path)
             copy_dataset(element_path, dist_root_path, image_list1)
-            count = count + 1
 
 dist_image_path = os.path.join(dist_root_path, 'image')
 dist_annotation_path = os.path.join(dist_root_path, 'annotation')
