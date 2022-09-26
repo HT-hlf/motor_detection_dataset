@@ -6,11 +6,12 @@
 
 import cv2
 
-img=cv2.imread(r'F:\Motor_detection_dataset\test_image_sum\20220616122644190.tif')
+img=cv2.imread(r'G:\doing\Motor_detection_dataset\test_image_sum\20220616122644190.tif')
 img_h,img_w,_=img.shape
 print('原始的图片尺寸:宽-{} 高-{}'.format(img_w,img_h))
-img_resize=cv2.resize(img,(640,480))
-cv2.imshow('0',img)
+# img_resize=cv2.resize(img,(640,480))
+img_resize=cv2.resize(img,(1280,960))
+# cv2.imshow('0',img)
 cv2.imshow('resize',img_resize)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
