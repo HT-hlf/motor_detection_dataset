@@ -9,7 +9,7 @@ import os
 
 
 
-root_path=r"G:\doing\Motor_detection_dataset\second_dataset\receve\3.8c\3.8c"
+root_path=r"G:\doing\Motor_detection_dataset\second_dataset\receve\3.4D\3.4D"
 save_path=root_path+"jpg"
 img_list = os.listdir(root_path)
 img_list.sort()
@@ -23,7 +23,7 @@ for element in img_list:
     # print(image_path)
 
     # element_jpg = element.rstrip('tif') + 'jpg'
-    jpg_path = save_path + "\\38c_" + str(count)+'.jpg'
+    jpg_path = save_path + "\\36d_" + str(count)+'.jpg'
     # print(jpg_path)
     image = cv2.imread(image_path)
 
