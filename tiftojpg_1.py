@@ -9,7 +9,7 @@ import os
 
 
 
-root_path=r"F:\doing\Motor_detection_dataset\third_dataset\receive\10.11N\10.11N"
+root_path=r"F:\doing\Motor_detection_dataset\third_dataset\receive\10.10D\10.10D"
 save_path=root_path+"jpg"
 img_list = os.listdir(root_path)
 img_list.sort()
@@ -23,7 +23,8 @@ for element in img_list:
     # print(image_path)
 
     # element_jpg = element.rstrip('tif') + 'jpg'
-    jpg_path = save_path + "\\third_10_11_n" + str(count)+'.jpg'
+    # jpg_path = save_path + "\\first_collect_" + str(count)+'.jpg'
+    jpg_path = save_path + "\\" + element.rstrip('.tif') + '.jpg'
     # print(jpg_path)  
     image = cv2.imread(image_path)
 
